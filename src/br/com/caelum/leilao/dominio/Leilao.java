@@ -8,7 +8,7 @@ public class Leilao {
 
 	private String descricao;
 	private List<Lance> lances;
-	
+
 	public Leilao(String descricao) {
 		this.descricao = descricao;
 		this.lances = new ArrayList<Lance>();
@@ -26,6 +26,5 @@ public class Leilao {
 		return Collections.unmodifiableList(lances);
 	}
 
-	
-	
+
 }
