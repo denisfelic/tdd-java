@@ -9,6 +9,9 @@ public class Avaliador {
     private Lance menorLance;
 
     public void avalia(List<Lance> lances) {
+    	if(lances.size() == 0)
+    		throw new RuntimeException("A lista de leilões está vazia!");
+    	
         this.listaLances = new ArrayList<Lance>(lances);
         ordenaListaValoresDecrescentes();
     }
